@@ -1,0 +1,14 @@
+<h2>List</h2>
+
+
+<div *ngFor="let restaurant of restaurants; index as restaurantId">
+
+  <a [title]="restaurant.name" [routerLink]="['/list', restaurantId]">
+
+    <h3>
+       {{ restaurant.name }}
+    </h3>
+
+  </a>
+
+</div>
